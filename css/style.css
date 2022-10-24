@@ -42,6 +42,10 @@ header {
     cursor: url(../cursor/ball.cur), auto;
 }
 
+.contacts p{
+    margin: 0;
+}
+
 .logo b {
     display: block;
     font-size: 44px;
@@ -79,6 +83,7 @@ main {
 
 /* Main text */
 main h1 {
+    margin: 0;
     color: #39930d;
     font-size: 24px;
 }
@@ -99,6 +104,7 @@ main p {
 }
 
 .menu p {
+    margin: 0;
     padding: 9px 20px;
     color: #fff;
     font-size: 18px;
