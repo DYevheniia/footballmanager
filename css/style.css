@@ -1,0 +1,138 @@
+/* Green background */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #8dc63f;
+}
+
+/* White background */
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 15px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Upper part of the site */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p,
+.contacts a {
+    margin: 0;
+    color: #39930d;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .5s ease all;
+}
+
+.contacts a {
+    display: block;
+    margin-bottom: 8px;
+    cursor: url(../cursor/ball.cur), auto;
+}
+
+.logo b {
+    display: block;
+    font-size: 44px;
+}
+
+.logo i,
+.contacts i {
+    margin-bottom: 26px;
+    color: #5a5a5a;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.logo img {
+    padding: 0 35px;
+}
+
+/* How to contact us */
+.contacts p {
+    text-align: right;
+}
+
+/* Main picture */
+.main-pic {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/* The main part of the site */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 30px;
+}
+
+/* Main text */
+main h1 {
+    color: #39930d;
+    font-size: 24px;
+}
+
+.main-text {
+    max-width: 600px;
+}
+
+main p {
+    color: #343434;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+/* Side menu */
+.menu {
+    width: 300px;
+}
+
+.menu p {
+    padding: 9px 20px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #39930d;
+}
+
+.menu ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 15px;
+}
+
+.menu a {
+    color: #39930d;
+    font-size: 14px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    transition: .5s ease all;
+    cursor: url(../cursor/ball.cur), auto;
+}
+
+.menu a:hover,
+.contacts a:hover {
+    color: #343434;
+}
+
+/* Bottom line of the site */
+.footer {
+    margin: 0 -15px;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #39930d;
+}
