@@ -17,7 +17,10 @@
             <!-- Logotype -->
             <div class="logo">
                 <p>Футбольний<b>Менеджер</b><i>Офіційний сайт</i></p>
-                <img src="img/ball.png" alt="Логотип фудбольного менеджера">
+                <picture>
+                    <source srcset="img/ball.webp" type="image/webp">
+                    <img src="img/ball.png" alt="Логотип фудбольного менеджера">
+                </picture>
             </div>
             <!-- How to contact us -->
             <div class="contacts">
@@ -25,7 +28,11 @@
             </div>
         </header>
         <!-- Main picture -->
-        <img src="img/field.png" alt="Про футбол, футбольного менеджера" class="main-pic">
+        <picture>
+            <source srcset="img/field.webp" type="image/webp">
+            <source srcset="img/field.jpg" type="image/jpg">
+            <img src="img/field.png" alt="Про футбол, футбольного менеджера" class="main-pic">
+        </picture>
         <!-- The main part of the site -->
         <main>
             <!-- Main text -->
@@ -49,18 +56,22 @@
             </article>
             <!-- Side menu -->
             <aside class="menu">
-                <p>Футбольні партнери</p>
-                <ul>
-                    <li><a href="#">останні новини</a></li>
-                    <li><a href="#">Парі матч</a></li>
-                    <li><a href="#">приватний менеджер Вася</a></li>
-                    <li><a href="#">фанати сектору №48</a></li>
-                    <li><a href="#">доставка їжі на стадіон</a></li>
-                </ul>
+                <nav>
+                    <p>Футбольні партнери</p>
+                    <ul>
+                        <li><a href="#">останні новини</a></li>
+                        <li><a href="#">Парі матч</a></li>
+                        <li><a href="#">приватний менеджер Вася</a></li>
+                        <li><a href="#">фанати сектору №48</a></li>
+                        <li><a href="#">доставка їжі на стадіон</a></li>
+                    </ul>
+                </nav>
             </aside>
         </main>
         <!-- The bottom line of the site -->
-        <p class="footer">&copy; Футбольний менеджер 2018.</p>
+        <footer>
+            <p>&copy; Футбольний менеджер 2018.</p>
+        </footer>
     </div>
 </body>
 
