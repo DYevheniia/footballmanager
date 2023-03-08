@@ -1,3 +1,7 @@
+html{
+    font-size: 1px;
+}
+
 /* Green background */
 body {
     margin: 0;
@@ -8,8 +12,8 @@ body {
 /* White background */
 .wrapper {
     margin: 0 auto;
-    max-width: 960px;
-    padding: 0 15px;
+    max-width: 960rem;
+    padding: 0 15rem;
     background-color: #fff;
     box-sizing: border-box;
 }
@@ -17,28 +21,43 @@ body {
 /* Upper part of the site */
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 25px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20rem;
+    padding: 25rem 0;
 }
 
 /* Logo */
 .logo {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 15rem;
+}
+
+.logo p{
+    text-align: center;
+}
+
+.logo b {
+    display: block;
+    font-size: 44rem;
 }
 
 .logo p,
 .contacts a {
     margin: 0;
     color: #39930d;
-    font-size: 22px;
+    font-size: 22rem;
     text-decoration: none;
     transition: .5s ease all;
 }
 
+
 .contacts a {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 8rem;
     cursor: url(../cursor/ball.cur), auto;
 }
 
@@ -46,31 +65,29 @@ header {
     margin: 0;
 }
 
-.logo b {
-    display: block;
-    font-size: 44px;
-}
-
 .logo i,
 .contacts i {
-    margin-bottom: 26px;
+    margin-bottom: 26rem;
     color: #5a5a5a;
     font-style: italic;
-    font-size: 14px;
+    font-size: 14rem;
 }
 
 .logo img {
-    padding: 0 35px;
+    padding: 0 35rem;
 }
 
 /* How to contact us */
 .contacts p {
-    text-align: right;
+    text-align: center;
 }
 
 /* Main picture */
 .main-pic {
     width: 100%;
+    object-fit: cover;
+    object-position: 75%;
+    height: 200rem;
     vertical-align: bottom;
 }
 
@@ -78,51 +95,58 @@ header {
 main {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0 30px;
+    flex-wrap: wrap-reverse;
+    padding: 30rem 0 30rem;
 }
 
 /* Main text */
 main h1 {
     margin: 0;
     color: #39930d;
-    font-size: 24px;
+    font-size: 24rem;
 }
 
 .main-text {
-    max-width: 600px;
+    max-width: 600rem;
 }
 
 main p {
     color: #343434;
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.5em;
 }
 
 /* Side menu */
 .menu {
-    width: 300px;
+    min-width: 300rem;
+    width: 100%;
 }
 
 .menu p {
     margin: 0;
-    padding: 9px 20px;
+    padding: 9rem 20rem;
     color: #fff;
-    font-size: 18px;
+    font-size: 18rem;
     background-color: #39930d;
 }
 
 .menu ul {
-    padding-left: 20px;
+    margin: 0;
+    margin-bottom: 15rem;
+    padding-top: 16rem;
+    padding-left: 20rem;
+    padding-bottom: 16rem;
     list-style: none;
+    background-color: #f2ffdf;
 }
 
 .menu li {
-    margin-bottom: 15px;
+    margin-bottom: 15rem;
 }
 
 .menu a {
     color: #39930d;
-    font-size: 14px;
+    font-size: 14rem;
     text-decoration: underline;
     text-transform: uppercase;
     transition: .5s ease all;
@@ -136,14 +160,42 @@ main p {
 
 /* Bottom line of the site */
 footer{
-    margin: 0 -15px;
-    padding: 15px;
+    margin: 0 -15rem;
+    padding: 15rem;
     background-color: #39930d;
 }
 
 footer p{
     margin: 0;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 14rem;
+}
 
+@media screen and (min-width:425px){
+    .logo{
+        justify-content: flex-start;
+    }
+
+    .logo p{
+        text-align: left;    
+    }
+
+    
+}
+
+@media screen and (min-width:625px){
+    header{
+        justify-content: space-between;
+    }
+    .contacts p {
+        text-align: right;
+    }
+
+    main{
+        flex-wrap: nowrap;
+    }
+
+    .menu ul{
+        background-color: transparent;
+    }
 }
