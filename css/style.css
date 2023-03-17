@@ -183,6 +183,7 @@ footer p{
     
 }
 
+
 @media screen and (min-width:625px){
     header{
         justify-content: space-between;
@@ -199,3 +200,23 @@ footer p{
         background-color: transparent;
     }
 }
+
+@media screen and (min-width:1300px){
+    html{
+        font-size: 1.4px;
+    }
+
+    .logo img{
+        transform: scale(1.4);
+    }
+}
+
+@media screen and (min-width:1700px){
+    html{
+        font-size: 1.6px;
+    }
+    .logo img{
+        transform: scale(1.6);
+    }
+}
+
